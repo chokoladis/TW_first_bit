@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url(../fonts/OpenSans-Regular.ttf);
+} 
+
+body, *{
+    margin: 0;
+    padding: 0;
+    transition-duration: .3s;
+}
+
+section{
+    background: #fbfafa;
+    font-family: "OpenSans", sans-serif;
+}
+.container{
+    width: 70%;
+    margin: 0px auto;
+}
+
+.title{
+    width: 100%;
+    background: #617188;
+    text-align: center;
+}
+h1,h3{
+    font-weight: 400;
+    width: fit-content;
+}
+h3{
+    font-size: 20px;
+    padding: 15px 0;
+    color: #fbfafa;
+    margin: 0px auto;
+}
+h1{
+    margin: 35px auto;
+    font-size: 27px;
+    color: #617188;
+}
+hr{
+    background: #e6e5e5;
+    height: 2px;
+    border: 0;
+    width: 80%;
+    margin: 0px auto;
+}
+form{
+    margin: 0px auto;
+    margin-top: 35px;
+    width: 75%;
+    color: #617189;
+}
+form > div{
+    margin-right: 15px;
+}
+form label{
+    font-size: 11px;
+    text-align: center;
+}
+form input,form select{
+    margin-top: 25px;
+    border-radius: 5px;
+    padding: 13px;
+    border: 1px solid #ebebea;
+}
+form input{
+    max-width: 105px;
+}
+form select{
+    max-width: 190px;
+}
+
+form label span{
+    border: 1px solid #617189;
+    border-radius: 30px;
+    margin: 5px;
+    padding: 0px 5px;
+}
