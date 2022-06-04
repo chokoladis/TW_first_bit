@@ -7,6 +7,7 @@ body, *{
     margin: 0;
     padding: 0;
     transition-duration: .3s;
+    transition: all .3s ease;
 }
 
 section{
@@ -17,6 +18,18 @@ section{
     width: 70%;
     margin: 0px auto;
 }
+.ch_hidden{
+    top: -500% !important;
+    transition: all .5s ease-in;
+}
+input:hover,select:hover{
+    box-shadow: 0px 1px 5px #80b0f8b0;
+}
+input:focus,select:focus{
+    outline: none;
+    box-shadow: 0px 2px 10px #5e97ecd3;
+}
+
 
 .title{
     width: 100%;
@@ -70,10 +83,82 @@ form input{
 form select{
     max-width: 190px;
 }
+form a {
+    margin-left: auto;
+}
 
 form label span{
-    border: 1px solid #617189;
+    border: 1px solid #617188;
     border-radius: 30px;
     margin: 5px;
     padding: 0px 5px;
+}
+form .tooltip{
+    transition: all 1s ease;
+    top: -140px;
+    left: 60px;
+    width: 230px;
+    box-shadow: 0px 3px 10px #c5c4c4;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: white;
+}
+form .tooltip *{
+    color: #617188;
+    font-size: 11px;
+}
+form .tooltip h4{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+form .tooltip ul{
+    margin: 0;
+    padding-left: 20px;
+}
+form select option{
+    padding: 10px 15px;
+}
+form select option[value=Прямоугольник]{
+    background: url(/img/Прямоугольник.png) 100% 50% no-repeat;
+}
+form select option[value=Круг]{
+    background-image: url(/img/Круг.png);
+}
+form .input_quantity{
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px;
+    margin-top: 25px;
+    border-radius: 5px;
+    border: 1px solid #ebebea;
+}
+form .input_quantity *{
+    font-size: 18px;
+    border: 0;
+    background: transparent;
+    color: black;
+}
+form .input_quantity button{
+    color: #617188;
+}
+form .input_quantity input{
+    margin: 0;
+    max-width: 40px;
+    padding: 0;
+    text-align: center;
+    outline: none;
+}
+form .input_quantity input:focus, form .input_quantity input:hover{
+    box-shadow: 0px 0px 0px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+form .sum{
+    display: flex;
+    width: 130px;
 }
