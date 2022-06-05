@@ -1,6 +1,6 @@
 @font-face {
     font-family: "OpenSans";
-    src: url(../fonts/OpenSans-Regular.ttf);
+    src: url(/assets/fonts/OpenSans-Regular.ttf);
 } 
 
 body, *{
@@ -159,6 +159,48 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 form .sum{
-    display: flex;
     width: 130px;
+    display: flex;
+    margin-top: 35px;
+    justify-content: space-around;
+    align-items: center;
+}
+form .sum p {
+    margin: 0;
+}
+form .sum img {
+    height: 15px;
+    cursor: pointer;
+}
+.empty_input{
+    display: none;
+    position: absolute;
+    top: 100px;
+    margin: 0;
+    border-radius: 5px;
+    align-items: center;
+    padding: 10px 15px;
+    box-shadow: 1px 3px 10px #b1b1b1;
+    left: 40px;
+}
+/* .empty_input::after{
+    content: '';
+    left: 50%;
+    height: 10px;
+    background: white;
+    box-shadow: 0px 0px 10px silver;
+    position: absolute;
+    z-index: -4;
+    top: -10px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    width: 10px;
+} */
+.empty_input img{
+    height: 15px;
+    margin-right: 10px;
+}
+.empty_input p{
+    font-size: 15px;
+    margin: 0;
 }

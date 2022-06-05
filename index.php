@@ -16,14 +16,18 @@
             </div>
             <h1>Задайте параметры стекла</h1>
             <hr>
-            <form action="" class="uk-flex">
+            <form action="" class="uk-flex uk-position-relative">
                 <div class="uk-flex uk-flex-column">
                     <label for="length">Укажите длину</label>
-                    <input type="text" name="length" id="length" placehoder="Длина | мм">
+                    <input type="number" name="length" id="length" placeholder="Длина | мм">
+                </div>
+                <div class="empty_input">
+                    <img src="/img/attention.png" alt="">
+                    <p>Укажите размеры</p>
                 </div>
                 <div class="uk-flex uk-flex-column">
                     <label for="width">Укажите ширину</label>
-                    <input type="text" name="width" id="width" placehoder="Ширина | мм">
+                    <input type="number" name="width" id="width" placeholder="Ширина | мм">
                 </div>
                 <div class="uk-flex uk-flex-column uk-position-relative">
                     <div class="tooltip uk-position-absolute uk-flex uk-flex-column ch_hidden">
@@ -85,8 +89,8 @@
                 <div class="uk-flex uk-flex-column">
                     <label for="quantity">Сумма</label>
                     <div class="sum">
-                        <p>20 000 ₽</p>
-                        <span></span>
+                        <p>0 ₽</p>
+                        <img src='/img/cross.svg' width="15px" color='#617189'>
                     </div>
                 </div>
             </form>
